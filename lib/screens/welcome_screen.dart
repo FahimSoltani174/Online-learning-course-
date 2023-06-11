@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:online_course/screens/home_screen.dart';
+=======
+>>>>>>> b78772db9b3e6c2e816c1e91120166574ec51223
 
 
 class WelcomeScreen extends StatelessWidget{
@@ -27,6 +30,7 @@ class WelcomeScreen extends StatelessWidget{
               ),
               child: Center(child: Image.asset("images/learn.png" ),),
             )
+<<<<<<< HEAD
           ],),
           Align(
             alignment: Alignment.bottomCenter,
@@ -91,6 +95,9 @@ class WelcomeScreen extends StatelessWidget{
               ),
             ),
           ),
+=======
+          ],)
+>>>>>>> b78772db9b3e6c2e816c1e91120166574ec51223
         ],),
       ),
     );
