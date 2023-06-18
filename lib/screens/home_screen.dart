@@ -11,12 +11,13 @@ class HomePage extends StatelessWidget{
     "LeaderBoard",
   ];
   List<Color> catColors= [
-    Color(0xFFFFCF2F),
-    Color(0xFF6FE08D),
-    Color(0xFF61BDFD),
-    Color(0xFFFC7C7F),
-    Color(0xFFCD84FD),
+    Color(0xFFD72631),
+    Color(0xFFA2D6C6),
     Color(0xFF78E667),
+    Color(0xFF077B8A),
+    Color(0xFFCD84FD),
+    Color(0xFF5C3C92),
+
 
   ];
 
@@ -30,10 +31,10 @@ class HomePage extends StatelessWidget{
   ];
 
   List imgList = [
-    "flutter.jpg",
-    "react.png",
-    "js.png",
-    "java.png",
+    "flutter",
+    "english",
+    "figma",
+    "wordpress",
   ];
   @override
   Widget build(BuildContext context){
@@ -43,7 +44,7 @@ class HomePage extends StatelessWidget{
           Container(
             padding: EdgeInsets.only(top: 15 , left: 15 , right: 15 , bottom: 10),
             decoration: BoxDecoration(
-              color: Color(0xFF674AEF),
+              color: Color(0xFFE52165),
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(20),
                 bottomRight: Radius.circular(20),
@@ -56,17 +57,14 @@ class HomePage extends StatelessWidget{
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Icon(
-                        Icons.dashboard ,size: 30 , color: Colors.white
+                        Icons.link_rounded ,size: 30 , color: Colors.white
                     ),
-                    Icon(
-                        Icons.notifications ,size: 30 , color: Colors.white
-                    )
                   ],
                 ),
                 SizedBox(height: 20),
                 Padding(
                   padding: EdgeInsets.only(left: 3 , bottom: 15) ,
-                  child: Text("Hi Programmer" ,
+                  child: Text("Search Any Thing You Want" ,
                     style: TextStyle(
                       fontSize: 25 , fontWeight: FontWeight.w600,
                       letterSpacing: 1,
@@ -143,7 +141,7 @@ class HomePage extends StatelessWidget{
                   Text("See All" , style: TextStyle (
                       fontSize: 18 ,
                       fontWeight: FontWeight.w500,
-                      color: Color(0xFF674AEF),
+                      color: Color(0xFFE52165),
                   ),
                   ),
                 ],
@@ -177,7 +175,7 @@ class HomePage extends StatelessWidget{
                         Padding(
                             padding: EdgeInsets.all(10),
                             child: Image.asset(
-                              "images/${imgList[index]}",
+                              "images/${imgList[index]}.png",
                               width: 100,
                               height: 100,
                             ),
@@ -211,7 +209,7 @@ class HomePage extends StatelessWidget{
       bottomNavigationBar: BottomNavigationBar(
         showUnselectedLabels: true,
         iconSize: 32,
-        selectedItemColor: Color(0xFF674AEF),
+        selectedItemColor: Color(0xFFE52165),
         selectedFontSize: 18,
         unselectedItemColor: Colors.grey,
         items: [
