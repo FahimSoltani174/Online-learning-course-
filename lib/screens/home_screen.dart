@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:online_course/screens/course_screen.dart';
 
 class HomePage extends StatelessWidget{
   List catNames = [
@@ -160,7 +161,12 @@ class HomePage extends StatelessWidget{
                 ),
                 itemBuilder: (context , index){
                   return InkWell(
-                    onTap: (){},
+                    onTap: (){
+                      Navigator.push(context, MaterialPageRoute(
+                          builder:(context)=>CourseScreen(imgList[index]),
+                        ),
+                      );
+                    },
                     child: Container(
                       padding: EdgeInsets.symmetric(vertical: 8.0 , horizontal: 10),
                       decoration:  BoxDecoration(
